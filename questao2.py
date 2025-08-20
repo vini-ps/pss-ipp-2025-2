@@ -20,4 +20,5 @@ for data in df[df['Bairro'] == bairro]['Data'].unique():
   resultado = f"Data: {data}\nBlocos:\n{bloco}\n"
   print(resultado)
 resultado = df[(df['Bairro'] == bairro)]
-resultado.to_csv('resultado.csv', index=False)
+if input("Deseja Salvar? (S ou N): ").upper() == 'S':
+  resultado.to_csv('resultado.csv', index=False)
