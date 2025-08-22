@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 df = pd.read_csv('Agenda_BL_Rua_Carnaval_Rio-2018_Imprensa.csv', encoding='latin1', sep=';')
 
